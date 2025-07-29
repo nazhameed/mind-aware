@@ -1,0 +1,45 @@
+/* Hero Section Styles */
+.hero-section {
+    background: url('../images/hero-ma.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-link {
+    font-weight: 500;
+}
