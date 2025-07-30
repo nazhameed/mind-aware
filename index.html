@@ -67,7 +67,7 @@
 
       <!-- Hero Section -->
       <main>
-      <section class="hero-section d-flex align-items-center">
+      <section class="hero-section d-flex align-items-center" style="min-height:380px; height: 48vh; max-height: 520px;">
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="row">
@@ -92,108 +92,143 @@
       <section id="common-issues" class="py-5 bg-white">
         <div class="container">
           <h2 class="section-title text-center mb-4">
-            Common Mental Health Issues
+            <i class="bi bi-heart-pulse text-danger"></i> Common Mental Health Issues
           </h2>
           <p class="section-description text-center mb-5">
-            Learn about the most common mental health challenges and how to
-            identify them early.
+            Learn about the most common mental health challenges, their signs, and gentle ways to cope.
           </p>
-
           <div class="row g-4 justify-content-center">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-              <article class="card card-teal h-100 shadow-sm text-center">
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title mb-3">
-                    Anxiety</h3>
-                  <p class="card-text flex-grow-1">
-                    Persistent feelings of nervousness or fear that can affect
-                    daily tasks and relationships.
-                  </p>
-                  <a href="https://www.mind.org.uk/information-support/types-of-mental-health-problems/anxiety-and-panic-attacks/anxiety-disorders/" class="btn btn-outline-primary mt-3">
-                    Explore Anxiety
-                  </a>
+            <!-- Anxiety Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg border-0 card-teal rounded-4">
+                <div class="card-body text-center d-flex flex-column p-4">
+                  <div class="mb-2">
+                    <i class="bi bi-emoji-frown-fill display-5 text-primary mb-2" title="Anxiety"></i>
+                  </div>
+                  <h3 class="card-title mb-2">Anxiety</h3>
+                  <p class="card-text small flex-grow-1">Persistent feelings of nervousness, worry, or fear that can affect daily life. Anxiety can manifest physically and emotionally, and may include panic attacks or social anxiety.</p>
+                  <button class="btn btn-outline-primary btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#anxietyMore" aria-expanded="false" aria-controls="anxietyMore">
+                    <i class="bi bi-search-heart"></i> Learn More
+                  </button>
+                  <div class="collapse mt-3" id="anxietyMore">
+                    <ul class="text-start small mb-2">
+                      <li><strong>Symptoms:</strong> Excessive worry, restlessness, rapid heartbeat.</li>
+                      <li><strong>Tips:</strong> Practice deep breathing, talk to someone you trust.</li>
+                    </ul>
+                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If anxiety disrupts your daily life.</p>
+                  </div>
                 </div>
-              </article>
+              </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-4">
-              <article class="card card-green h-100 shadow-sm text-center">
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title mb-3">Depression</h3>
-                  <p class="card-text flex-grow-1">
-                    A prolonged state of sadness, loss of interest, and low
-                    energy impacting everyday life.
-                  </p>
-                  <a href="https://www.nhs.uk/conditions/clinical-depression/" class="btn btn-outline-primary mt-3">
-                    Understand Depression
-                  </a>
+            <!-- Depression Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg border-0 card-green rounded-4">
+                <div class="card-body text-center d-flex flex-column p-4">
+                  <div class="mb-2">
+                    <i class="bi bi-cloud-rain-fill display-5 text-success mb-2" title="Depression"></i>
+                  </div>
+                  <h3 class="card-title mb-2">Depression</h3>
+                  <p class="card-text small flex-grow-1">A prolonged state of sadness, hopelessness, or emptiness. Depression can cause changes in sleep, appetite, motivation, and self-esteem, and may make daily tasks feel overwhelming.</p>
+                  <button class="btn btn-outline-success btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#depressionMore" aria-expanded="false" aria-controls="depressionMore">
+                    <i class="bi bi-search-heart"></i> Learn More
+                  </button>
+                  <div class="collapse mt-3" id="depressionMore">
+                    <ul class="text-start small mb-2">
+                      <li><strong>Symptoms:</strong> Persistent sadness, loss of interest, fatigue.</li>
+                      <li><strong>Tips:</strong> Stay connected, set small goals, seek sunlight.</li>
+                    </ul>
+                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If symptoms last more than two weeks or are severe.</p>
+                  </div>
                 </div>
-              </article>
+              </div>
             </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-4">
-              <article class="card card-lavender h-100 shadow-sm text-center">
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title mb-3">Stress</h3>
-                  <p class="card-text flex-grow-1">
-                    Emotional strain caused by challenging or demanding
-                    situations.
-                  </p>
-                  <a href="https://www.mentalhealth.org.uk/publications/stress" class="btn btn-outline-primary mt-3">
-                    More on Stress
-                  </a>
+            <!-- Stress Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg border-0 card-lavender rounded-4">
+                <div class="card-body text-center d-flex flex-column p-4">
+                  <div class="mb-2">
+                    <i class="bi bi-lightning-fill display-5 text-info mb-2" title="Stress"></i>
+                  </div>
+                  <h3 class="card-title mb-2">Stress</h3>
+                  <p class="card-text small flex-grow-1">Emotional and physical strain caused by challenging or demanding situations. Stress can be acute or chronic, and may impact your mood, body, and ability to cope with daily life.</p>
+                  <button class="btn btn-outline-info btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#stressMore" aria-expanded="false" aria-controls="stressMore">
+                    <i class="bi bi-search-heart"></i> Learn More
+                  </button>
+                  <div class="collapse mt-3" id="stressMore">
+                    <ul class="text-start small mb-2">
+                      <li><strong>Symptoms:</strong> Feeling overwhelmed, headaches, trouble sleeping.</li>
+                      <li><strong>Tips:</strong> Take breaks, move your body, talk it out.</li>
+                    </ul>
+                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If stress feels unmanageable or constant.</p>
+                  </div>
                 </div>
-              </article>
+              </div>
             </div>
-
-            <!-- Card 4 -->
-            <div class="col-md-4">
-              <article class="card card-green h-100 shadow-sm text-center">
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title mb-3">PTSD</h3>
-                  <p class="card-text flex-grow-1">
-                    A mental health condition triggered by experiencing or
-                    witnessing trauma.
-                  </p>
-                  <a href="https://www.nhs.uk/conditions/post-traumatic-stress-disorder-ptsd/" class="btn btn-outline-primary mt-3">
-                    What is PTSD
-                  </a>
+            <!-- PTSD Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg border-0 card-green rounded-4">
+                <div class="card-body text-center d-flex flex-column p-4">
+                  <div class="mb-2">
+                    <i class="bi bi-exclamation-triangle-fill display-5 text-success mb-2" title="PTSD"></i>
+                  </div>
+                  <h3 class="card-title mb-2">PTSD</h3>
+                  <p class="card-text small flex-grow-1">A mental health condition triggered by experiencing or witnessing trauma. PTSD can cause flashbacks, nightmares, and intense emotional distress, often long after the traumatic event.</p>
+                  <button class="btn btn-outline-success btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#ptsdMore" aria-expanded="false" aria-controls="ptsdMore">
+                    <i class="bi bi-search-heart"></i> Learn More
+                  </button>
+                  <div class="collapse mt-3" id="ptsdMore">
+                    <ul class="text-start small mb-2">
+                      <li><strong>Symptoms:</strong> Flashbacks, avoidance, feeling on edge.</li>
+                      <li><strong>Tips:</strong> Practice grounding, seek safe spaces, talk to a professional.</li>
+                    </ul>
+                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If symptoms persist or disrupt daily life.</p>
+                  </div>
                 </div>
-              </article>
+              </div>
             </div>
-
-            <!-- Card 5 -->
-            <div class="col-md-4">
-              <article class="card card-lavender h-100 shadow-sm text-center">
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title mb-3">OCD</h3>
-                  <p class="card-text flex-grow-1">
-                    Characterized by unwanted repetitive thoughts and behaviors.
-                  </p>
-                  <a href="https://www.nhs.uk/conditions/obsessive-compulsive-disorder-ocd/" class="btn btn-outline-primary mt-3">
-                    OCD Explained
-                  </a>
+            <!-- OCD Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg border-0 card-lavender rounded-4">
+                <div class="card-body text-center d-flex flex-column p-4">
+                  <div class="mb-2">
+                    <i class="bi bi-arrow-repeat display-5 text-info mb-2" title="OCD repetitive thoughts and behaviors"></i>
+                  </div>
+                  <h3 class="card-title mb-2">OCD</h3>
+                  <p class="card-text small flex-grow-1">Characterized by unwanted, intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) performed to reduce anxiety. OCD can be time-consuming and distressing.</p>
+                  <button class="btn btn-outline-info btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#ocdMore" aria-expanded="false" aria-controls="ocdMore">
+                    <i class="bi bi-search-heart"></i> Learn More
+                  </button>
+                  <div class="collapse mt-3" id="ocdMore">
+                    <ul class="text-start small mb-2">
+                      <li><strong>Symptoms:</strong> Obsessions, compulsions, distress when unable to perform rituals.</li>
+                      <li><strong>Tips:</strong> Practice self-compassion, try gentle exposure, seek support.</li>
+                    </ul>
+                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If OCD interferes with daily life or causes distress.</p>
+                  </div>
                 </div>
-              </article>
+              </div>
             </div>
-
-            <!-- Card 6 -->
-            <div class="col-md-4">
-              <article class="card card-teal h-100 shadow-sm text-center">
-                <div class="card-body d-flex flex-column">
-                  <h3 class="card-title mb-3">Bipolar Disorder</h3>
-                  <p class="card-text flex-grow-1">
-                    Mood swings that range from depressive lows to manic highs,
-                    affecting daily functioning.
-                  </p>
-                  <a href="https://www.nhs.uk/conditions/bipolar-disorder/" class="btn btn-outline-primary mt-3">
-                    Living with Bipolar
-                  </a>
+            <!-- Bipolar Disorder Card -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100 shadow-lg border-0 card-teal rounded-4">
+                <div class="card-body text-center d-flex flex-column p-4">
+                  <div class="mb-2">
+                    <i class="bi bi-arrow-left-right display-5 text-primary mb-2" title="Bipolar mood swings"></i>
+                  </div>
+                  <h3 class="card-title mb-2">Bipolar Disorder</h3>
+                  <p class="card-text small flex-grow-1">A condition marked by extreme mood swings, including emotional highs (mania or hypomania) and lows (depression). Bipolar disorder can affect energy, judgment, and relationships.</p>
+                  <button class="btn btn-outline-primary btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bipolarMore" aria-expanded="false" aria-controls="bipolarMore">
+                    <i class="bi bi-search-heart"></i> Learn More
+                  </button>
+                  <div class="collapse mt-3" id="bipolarMore">
+                    <ul class="text-start small mb-2">
+                      <li><strong>Symptoms:</strong> Mood swings, high energy, sadness, impulsivity.</li>
+                      <li><strong>Tips:</strong> Keep a routine, track moods, reach out for help.</li>
+                    </ul>
+                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If mood changes are severe or impact daily life.</p>
+                  </div>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
         </div>
@@ -249,6 +284,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+
 
     <!---Footer-->
     <footer class="footer">
