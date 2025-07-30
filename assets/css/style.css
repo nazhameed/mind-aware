@@ -345,3 +345,34 @@ p {
   color: #3a7a8c;
   text-decoration: underline;
 }
+
+.resources-list {
+  background-color: #f8fdff;
+  padding: 4rem 0;
+}
+
+.resource-links {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.resource-links li {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.resource-links a {
+  color: #4a90a4;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.resource-links a:hover {
+  border-bottom: 1px solid #4a90a4;
+}
