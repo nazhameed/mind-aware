@@ -191,6 +191,32 @@ p {
   background-color: #3a7a8c;
 }
 
+/* Responsive Styles for Hero Section */
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 220px !important;
+    height: auto !important;
+    padding: 2.5rem 0 2rem 0;
+    background-position: center top;
+  }
+  .hero-section .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .hero-section h1 {
+    font-size: 1.6rem !important;
+    margin-bottom: 1.2rem;
+  }
+  .hero-section p.lead {
+    font-size: 1rem !important;
+    margin-bottom: 1.2rem;
+  }
+  .hero-section .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
 /* Cards */
 .card {
   border: none;
