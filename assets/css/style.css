@@ -365,14 +365,93 @@ p {
   color: #444;
 }
 
+/* Ensure all resource links are teal */
 .resource-links a {
-  color: #4a90a4;
+  color: #4a90a4 !important;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .resource-links a:hover {
+  color: #357a8a !important;
   border-bottom: 1px solid #4a90a4;
+  text-decoration: none;
+}
+
+/* Emergency section links */
+.card-body .resource-links a {
+  color: #4a90a4 !important;
+}
+
+.card-body .resource-links a:hover {
+  color: #357a8a !important;
+}
+
+/* Affirmations Page Styles */
+.affirmation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.affirmation-list li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.affirmation-list li:before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+  color: #4a90a4;
+}
+
+.affirmation-list li:last-child {
+  border-bottom: none;
+}
+
+/* Tips and Affirmations Section Styles */
+.tips-section, .affirmations-section {
+  background: linear-gradient(135deg, #f8fdff 0%, #f0f8f0 50%, #faf0fa 100%);
+  padding: 4rem 0;
+}
+
+/* Emergency Section Styles */
+.emergency-section {
+  border-bottom: 3px solid #dc3545;
+}
+
+.emergency-section .btn-light {
+  font-weight: 600;
+  border: 2px solid #fff;
+}
+
+.emergency-section .btn-light:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+}
+
+.emergency-section .btn-outline-light {
+  font-weight: 600;
+  border: 2px solid #fff;
+}
+
+.emergency-section .btn-outline-light:hover {
+  background-color: #fff;
+  color: #dc3545;
+  transform: translateY(-1px);
+}
+
+/* Resource section improvements */
+.resources-list .card-header h3 {
+  color: inherit;
+}
+
+.resources-list .card-header h3::after {
+  display: none;
 }
