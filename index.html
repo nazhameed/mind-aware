@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MindAware - Mental Health Matters</title>
 
-    <!-- Bootstrap CSS Link -->
+    
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    
-    <script
+   
+    <!-- FontAwesome -->
+     <script
       src="https://kit.fontawesome.com/ddb0718bd5.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Google Fonts: Poppins -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Header/Main Content -->
     <div class="main-content">
-      <!-- Navbar -->
+      
+      <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#" style="color: #035e5b; font-weight: 700; letter-spacing: 0.01em; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
-            <i class="fa-solid fa-brain" style="color: #035e5b; font-size: 1.7rem;"></i> Mind Aware
+          <a class="navbar-brand brand-custom" href="#">
+            <i class="fa-solid fa-brain brand-icon"></i> Mind Aware
           </a>
           <button
             class="navbar-toggler"
@@ -66,9 +73,10 @@
         </div>
       </nav>
 
-      <!-- Hero Section -->
+      
       <main>
-      <section class="hero-section d-flex align-items-center" style="min-height:380px; height: 48vh; max-height: 520px;">
+      <!-- Hero Section -->
+      <section class="hero-section d-flex align-items-center hero-custom-height">
         <div class="hero-overlay"></div>
         <div class="container">
           <div class="row">
@@ -89,144 +97,148 @@
         </div>
       </section>
 
+      
       <!-- Common Mental Health Issues Section -->
       <section id="common-issues" class="py-5 bg-white">
         <div class="container">
-          <h2 class="section-title text-center mb-4" style="color: #035e5b; font-size: 2.2rem; font-weight: 800; letter-spacing: 0.01em; text-shadow: 0 2px 16px #e0e7ff;">
-            <span aria-hidden="true" style="font-size: 2.3rem; vertical-align: middle;">💬</span> Common Mental Health Issues
+          <h2 class="section-title text-center mb-4 section-title-custom">
+            <span aria-hidden="true" class="emoji-large">💬</span> Common Mental Health Issues
           </h2>
-          <p class="section-description text-center mb-5" style="color: #035e5b; font-size: 1.15rem; max-width: 650px; margin: 0 auto 2.2rem auto; letter-spacing: 0.01em;">
+          <p class="section-description text-center mb-5 section-desc-custom">
             Learn about the most common mental health challenges, their signs, and gentle ways to cope.
           </p>
           <div class="row g-4 justify-content-center">
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #ede9fe 70%, #f8fafd 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 card-issue-anxiety">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                  <h4 class="card-title text-center mb-3 card-issue-title-anxiety">
                     😰 Anxiety
                   </h4>
-                  <p style="color:#111; font-weight:600;">Persistent feelings of nervousness, worry, or fear that can affect daily life.</p>
-                  <ul style="color:#111;">
-                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Excessive worry, restlessness, rapid heartbeat, sweating, trouble concentrating.</span></li>
-                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Practice deep breathing, talk to someone you trust, try grounding techniques, limit caffeine.</span></li>
+                  <p class="card-issue-desc">Persistent feelings of nervousness, worry, or fear that can affect daily life.</p>
+                  <ul class="card-issue-list">
+                    <li><strong class="card-issue-label">Symptoms:</strong> <span class="card-issue-highlight">Excessive worry, restlessness, rapid heartbeat, sweating, trouble concentrating.</span></li>
+                    <li><strong class="card-issue-label">Tips:</strong> <span class="card-issue-highlight">Practice deep breathing, talk to someone you trust, try grounding techniques, limit caffeine.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #e9d5ff 70%, #f8fafd 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 card-issue-depression">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                  <h4 class="card-title text-center mb-3 card-issue-title-depression">
                     🌧️ Depression
                   </h4>
-                  <p style="color:#111; font-weight:600;">A prolonged state of sadness, hopelessness, or emptiness. Can affect motivation, sleep, appetite, and relationships.</p>
-                  <ul style="color:#111;">
-                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Persistent sadness, loss of interest, fatigue, changes in sleep or appetite, feelings of worthlessness.</span></li>
-                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Stay connected, set small goals, seek sunlight, consider professional help.</span></li>
+                  <p class="card-issue-desc">A prolonged state of sadness, hopelessness, or emptiness. Can affect motivation, sleep, appetite, and relationships.</p>
+                  <ul class="card-issue-list">
+                    <li><strong class="card-issue-label">Symptoms:</strong> <span class="card-issue-highlight">Persistent sadness, loss of interest, fatigue, changes in sleep or appetite, feelings of worthlessness.</span></li>
+                    <li><strong class="card-issue-label">Tips:</strong> <span class="card-issue-highlight">Stay connected, set small goals, seek sunlight, consider professional help.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #f3e8ff 70%, #f8fafd 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 card-issue-stress">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                  <h4 class="card-title text-center mb-3 card-issue-title-stress">
                     💥 Stress
                   </h4>
-                  <p style="color:#111; font-weight:600;">Emotional and physical strain caused by challenging or demanding situations.</p>
-                  <ul style="color:#111;">
-                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Feeling overwhelmed, headaches, trouble sleeping, irritability, muscle tension.</span></li>
-                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Take breaks, move your body, talk it out, try relaxation techniques, set boundaries.</span></li>
+                  <p class="card-issue-desc">Emotional and physical strain caused by challenging or demanding situations.</p>
+                  <ul class="card-issue-list">
+                    <li><strong class="card-issue-label">Symptoms:</strong> <span class="card-issue-highlight">Feeling overwhelmed, headaches, trouble sleeping, irritability, muscle tension.</span></li>
+                    <li><strong class="card-issue-label">Tips:</strong> <span class="card-issue-highlight">Take breaks, move your body, talk it out, try relaxation techniques, set boundaries.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #ede9fe 70%, #e9d5ff 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 card-issue-ptsd">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                  <h4 class="card-title text-center mb-3 card-issue-title-ptsd">
                     🧩 PTSD
                   </h4>
-                  <p style="color:#111; font-weight:600;">A mental health condition triggered by experiencing or witnessing trauma.</p>
-                  <ul style="color:#111;">
-                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Flashbacks, avoidance, feeling on edge, nightmares, emotional numbness.</span></li>
-                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Practice grounding, seek safe spaces, talk to a professional, try mindfulness.</span></li>
+                  <p class="card-issue-desc">A mental health condition triggered by experiencing or witnessing trauma.</p>
+                  <ul class="card-issue-list">
+                    <li><strong class="card-issue-label">Symptoms:</strong> <span class="card-issue-highlight">Flashbacks, avoidance, feeling on edge, nightmares, emotional numbness.</span></li>
+                    <li><strong class="card-issue-label">Tips:</strong> <span class="card-issue-highlight">Practice grounding, seek safe spaces, talk to a professional, try mindfulness.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #f3e8ff 70%, #ede9fe 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 card-issue-ocd">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                  <h4 class="card-title text-center mb-3 card-issue-title-ocd">
                     🔁 OCD
                   </h4>
-                  <p style="color:#111; font-weight:600;">Unwanted, intrusive thoughts and repetitive behaviors performed to reduce anxiety.</p>
-                  <ul style="color:#111;">
-                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Obsessions, compulsions, distress when unable to perform rituals, time-consuming behaviors.</span></li>
-                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Practice self-compassion, try gentle exposure, seek support, avoid self-judgment.</span></li>
+                  <p class="card-issue-desc">Unwanted, intrusive thoughts and repetitive behaviors performed to reduce anxiety.</p>
+                  <ul class="card-issue-list">
+                    <li><strong class="card-issue-label">Symptoms:</strong> <span class="card-issue-highlight">Obsessions, compulsions, distress when unable to perform rituals, time-consuming behaviors.</span></li>
+                    <li><strong class="card-issue-label">Tips:</strong> <span class="card-issue-highlight">Practice self-compassion, try gentle exposure, seek support, avoid self-judgment.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #e9d5ff 70%, #f3e8ff 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 card-issue-bipolar">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                  <h4 class="card-title text-center mb-3 card-issue-title-bipolar">
                     🔄 Bipolar Disorder
                   </h4>
-                  <p style="color:#111; font-weight:600;">A condition marked by extreme mood swings, including emotional highs and lows.</p>
-                  <ul style="color:#111;">
-                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Mood swings, high energy, impulsivity, sadness, changes in sleep, risky behavior.</span></li>
-                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Keep a routine, track moods, reach out for help, avoid substance use, seek professional support.</span></li>
+                  <p class="card-issue-desc">A condition marked by extreme mood swings, including emotional highs and lows.</p>
+                  <ul class="card-issue-list">
+                    <li><strong class="card-issue-label">Symptoms:</strong> <span class="card-issue-highlight">Mood swings, high energy, impulsivity, sadness, changes in sleep, risky behavior.</span></li>
+                    <li><strong class="card-issue-label">Tips:</strong> <span class="card-issue-highlight">Keep a routine, track moods, reach out for help, avoid substance use, seek professional support.</span></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <p style="text-align: center; color: #198754; font-size: 1.05rem; margin-top: 1.7rem; letter-spacing: 0.01em;">If you relate to any of these, know that support is available and you are not alone.</p>
+        <p class="section-note-support">If you relate to any of these, know that support is available and you are not alone.</p>
         </div>
       </section>
 
-       <!-- Emergency Resources -->
-          <section class="crisis-support-simple" aria-labelledby="crisis-support-title" style="background: #fff3f3; border-radius: 1.2rem; padding: 2rem 1rem; margin-bottom: 2.5rem; box-shadow: 0 2px 12px rgba(220,53,69,0.08);">
-            <h2 id="crisis-support-title" style="color: #b8002e; font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem;">
-              <span aria-hidden="true" style="font-size: 2.2rem; vertical-align: middle;">🚨</span> Emergency & Crisis Support
-            </h2>
-            <p style="text-align: center; color: #333; font-size: 1.1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">
-              If you or someone you know is in immediate danger or having thoughts of self-harm, <strong>get help now</strong>.
-            </p>
-            <div class="crisis-cards d-flex flex-wrap justify-content-center align-items-stretch gap-4" style="margin-left: auto; margin-right: auto;">
-              <div class="crisis-card d-flex flex-column align-items-center justify-content-between" style="background: #fff; border: 2px solid #b8002e; border-radius: 1rem; padding: 1.2rem 1.5rem; min-width: 220px; max-width: 320px; width: 100%; box-shadow: 0 1px 6px rgba(220,53,69,0.07);">
-                <h3 style="color: #b8002e; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.5rem;">999</h3>
-                <p style="color: #333; font-size: 1rem; text-align: center;">Emergency services for immediate life-threatening situations.</p>
-                <a href="tel:999" class="btn btn-danger mt-auto w-100" style="font-size: 1rem;">Call 999</a>
-              </div>
-              <div class="crisis-card d-flex flex-column align-items-center justify-content-between" style="background: #fff; border: 2px solid #b8002e; border-radius: 1rem; padding: 1.2rem 1.5rem; min-width: 220px; max-width: 320px; width: 100%; box-shadow: 0 1px 6px rgba(220,53,69,0.07);">
-                <h3 style="color: #b8002e; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.5rem;">Samaritans</h3>
-                <p style="color: #333; font-size: 1rem; text-align: center;">24/7 confidential support for anyone in emotional distress.</p>
-                <a href="tel:116123" class="btn btn-outline-danger mt-auto w-100" style="font-size: 1rem;">Call 116 123</a>
-              </div>
-              <div class="crisis-card d-flex flex-column align-items-center justify-content-between" style="background: #fff; border: 2px solid #b8002e; border-radius: 1rem; padding: 1.2rem 1.5rem; min-width: 220px; max-width: 320px; width: 100%; box-shadow: 0 1px 6px rgba(220,53,69,0.07);">
-                <h3 style="color: #b8002e; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.5rem;">Text SHOUT to 85258</h3>
-                <p style="color: #333; font-size: 1rem; text-align: center;">Crisis text line for 24/7 support via text message.</p>
-                <a href="https://www.giveusashout.org/" target="_blank" rel="noopener" class="btn btn-outline-danger mt-auto w-100" style="font-size: 1rem;">Text Now</a>
-              </div>
-            </div>
-            <p style="text-align: center; color: #555; font-size: 0.98rem; margin-top: 1.5rem;">All services are free and confidential. You are not alone.</p>
-          </section>
+      
+      <!-- Emergency & Crisis Support Section -->
+      <section class="crisis-support-simple" aria-labelledby="crisis-support-title">
+        <h2 id="crisis-support-title" class="crisis-support-title">
+          <span aria-hidden="true" class="crisis-support-emoji">🚨</span> Emergency & Crisis Support
+        </h2>
+        <p class="crisis-support-desc">
+          If you or someone you know is in immediate danger or having thoughts of self-harm, <strong>get help now</strong>.
+        </p>
+        <div class="crisis-cards d-flex flex-wrap justify-content-center align-items-stretch gap-4">
+          <div class="crisis-card d-flex flex-column align-items-center justify-content-between">
+            <h3 class="crisis-card-title">999</h3>
+            <p class="crisis-card-text">Emergency services for immediate life-threatening situations.</p>
+            <a href="tel:999" class="btn btn-danger mt-auto w-100 crisis-card-btn">Call 999</a>
+          </div>
+          <div class="crisis-card d-flex flex-column align-items-center justify-content-between">
+            <h3 class="crisis-card-title">Samaritans</h3>
+            <p class="crisis-card-text">24/7 confidential support for anyone in emotional distress.</p>
+            <a href="tel:116123" class="btn btn-outline-danger mt-auto w-100 crisis-card-btn">Call 116 123</a>
+          </div>
+          <div class="crisis-card d-flex flex-column align-items-center justify-content-between">
+            <h3 class="crisis-card-title">Text SHOUT to 85258</h3>
+            <p class="crisis-card-text">Crisis text line for 24/7 support via text message.</p>
+            <a href="https://www.giveusashout.org/" target="_blank" rel="noopener" class="btn btn-outline-danger mt-auto w-100 crisis-card-btn">Text Now</a>
+          </div>
+        </div>
+        <p class="crisis-support-note">All services are free and confidential. You are not alone.</p>
+      </section>
 
 
-      <!-- Additional Sections -->
+      
+      <!-- Mental Health Tips Section -->
       <section id="tips" class="tips-section py-5">
         <div class="container">
           <h2 class="section-title text-center mb-4">Mental Health Tips</h2>
           <p class="text-center mb-5">Simple, practical habits to support your mental wellbeing and help you thrive in daily life.</p>
 
           <div class="row g-4">
-            <!-- Tip 1 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-teal h-100 shadow-sm">
+                <img src="assets/images/self-care.jpg" alt="Self-care: relaxing with a book and tea" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-heart-fill me-2"></i>Practice Self-Care
@@ -236,9 +248,10 @@
               </article>
             </div>
 
-            <!-- Tip 2 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-green h-100 shadow-sm">
+                <img src="assets/images/connected.jpg" alt="Stay Connected: friends talking and smiling together" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-people-fill me-2"></i>Stay Connected
@@ -248,9 +261,10 @@
               </article>
             </div>
 
-            <!-- Tip 3 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-lavender h-100 shadow-sm">
+                <img src="assets/images/sleep.jpg" alt="Sleep: peaceful night with stars and moon" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-moon-fill me-2"></i>Get Enough Sleep
@@ -260,9 +274,10 @@
               </article>
             </div>
 
-            <!-- Tip 4 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-green h-100 shadow-sm">
+                <img src="assets/images/nature.jpg" alt="Spend Time in Nature: walking in a green park" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-tree-fill me-2"></i>Spend Time in Nature
@@ -272,9 +287,10 @@
               </article>
             </div>
 
-            <!-- Tip 5 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-lavender h-100 shadow-sm">
+                <img src="assets/images/journal.jpg" alt="Keep a Journal: writing thoughts in a notebook" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-journal-text me-2"></i>Keep a Journal
@@ -284,9 +300,10 @@
               </article>
             </div>
 
-            <!-- Tip 6 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-teal h-100 shadow-sm">
+                <img src="assets/images/stay-active.jpg" alt="Stay Active: person jogging outdoors" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-activity me-2"></i>Stay Active
@@ -296,9 +313,10 @@
               </article>
             </div>
 
-            <!-- Tip 7 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-green h-100 shadow-sm">
+                <img src="assets/images/mindful.jpg" alt="Practice Mindfulness: meditating in a calm space" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-cup-hot-fill me-2"></i>Practice Mindfulness
@@ -308,9 +326,10 @@
               </article>
             </div>
 
-            <!-- Tip 8 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-lavender h-100 shadow-sm">
+                <img src="assets/images/talk.jpg" alt="Talk About It: two people having a supportive conversation" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-chat-heart-fill me-2"></i>Talk About It
@@ -320,9 +339,10 @@
               </article>
             </div>
 
-            <!-- Tip 9 -->
+            
             <div class="col-md-6 col-lg-4">
               <article class="card card-teal h-100 shadow-sm">
+                <img src="assets/images/goals.jpg" alt="Set Small Goals: checklist and calendar planning" class="tip-card-img" />
                 <div class="card-body">
                   <h3 class="card-title">
                     <i class="bi bi-calendar-check me-2"></i>Set Small Goals
@@ -335,24 +355,22 @@
         </div>
       </section>
 
+      <!-- Resources Section -->
       <section id="resources" class="resources-list py-5">
         <div class="container">
           <h2 class="section-title">UK Mental Health & Neurodivergent Resources</h2>
           <p class="text-center mb-5">Explore trusted organisations and services supporting mental health and neurodivergent communities.</p>
 
          
-          <div class="row mb-4">
-            <div class="col-12 text-center">
-            </div>
-          </div>
+         
           <div class="row g-4 justify-content-center">
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #f8fafd 70%, #e0e7ff 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 resource-card-general">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#4b3ca7; font-weight:700;">
+                <h4 class="card-title text-center mb-3 resource-card-title-general">
                     <i class="bi bi-heart-fill me-2 text-primary"></i>General Mental Health Support
                   </h4>
-                  <ul class="resource-links mb-0" style="font-size:1.07rem;">
+                  <ul class="resource-links mb-0 resource-card-list">
                     <li><a href="https://www.mind.org.uk" target="_blank">Mind</a> – Advice and support for anyone experiencing mental health issues.</li>
                     <li><a href="https://www.youngminds.org.uk" target="_blank">YoungMinds</a> – Support and resources for young people's mental health.</li>
                     <li><a href="https://www.nhs.uk/mental-health/" target="_blank">NHS Mental Health Services</a> – Official NHS support for mental health care.</li>
@@ -363,12 +381,12 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #e0ffe7 70%, #e0e7ff 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 resource-card-nd">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                <h4 class="card-title text-center mb-3 resource-card-title-nd">
                     <i class="bi bi-puzzle-fill me-2 text-success"></i>Neurodivergent Support
                   </h4>
-                  <ul class="resource-links mb-0" style="font-size:1.07rem;">
+                  <ul class="resource-links mb-0 resource-card-list">
                     <li><a href="https://www.autism.org.uk" target="_blank">National Autistic Society</a> – Leading UK charity for autistic people and their families.</li>
                     <li><a href="https://www.adhdfoundation.org.uk" target="_blank">ADHD Foundation</a> – Neurodiversity charity supporting ADHD and related conditions.</li>
                     <li><a href="https://www.adhduk.co.uk" target="_blank">ADHD UK</a> – Support and information for people with ADHD.</li>
@@ -378,12 +396,12 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #fffbe7 70%, #e0e7ff 100%); border-radius: 1.2rem;">
+              <div class="card h-100 shadow-lg border-0 resource-card-specialist">
                 <div class="card-body">
-                  <h4 class="card-title text-center mb-3" style="color:#b8860b; font-weight:700;">
+                <h4 class="card-title text-center mb-3 resource-card-title-specialist">
                     <i class="fa-solid fa-user-doctor me-2 text-warning"></i>Specialist Support
                   </h4>
-                  <ul class="resource-links mb-0" style="font-size:1.07rem;">
+                  <ul class="resource-links mb-0 resource-card-list">
                     <li><a href="https://www.baat.org" target="_blank">British Association of Art Therapists</a> – Resources on therapeutic art for mental health.</li>
                     <li><a href="https://www.bacp.co.uk" target="_blank">BACP (British Association for Counselling & Psychotherapy)</a> – Find qualified therapists and counsellors.</li>
                     <li><a href="https://www.relate.org.uk" target="_blank">Relate</a> – Relationship counselling and support services.</li>
@@ -396,15 +414,16 @@
         </div>
       </section>
 
+      <!-- Affirmations Section -->
       <section id="affirmations" class="affirmations-section py-5 bg-light">
         <div class="container">
           <h2 class="section-title text-center mb-4">Positive Affirmations</h2>
           <p class="text-center mb-4">Encouraging words to remind you of your strength, hope, and ability to grow through difficult times.</p>
           <div class="row justify-content-center mb-4">
             <div class="col-lg-10 col-xl-8">
-              <div class="card shadow-sm border-0 mb-4" style="border-radius: 1.1rem;">
+              <div class="card shadow-sm border-0 mb-4 affirmations-howto-card">
                 <div class="card-body">
-                  <h4 class="mb-3" style="color: #035e5b; font-weight: 700;"><i class="bi bi-lightbulb-fill me-2"></i>How to Use Affirmations</h4>
+                <h4 class="mb-3 affirmations-howto-title"><i class="bi bi-lightbulb-fill me-2"></i>How to Use Affirmations</h4>
                   <div class="row text-center">
                     <div class="col-md-4 mb-3 mb-md-0">
                       <i class="bi bi-clock-fill display-6 text-primary mb-2"></i>
@@ -429,11 +448,11 @@
           <div class="accordion" id="affirmationsAccordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#035e5b; background: #e0f7fa;">
+                <button class="accordion-button collapsed fw-bold affirmations-accordion-btn-daily" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   <i class="bi bi-sun-fill me-2"></i>Daily Reminders
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#affirmationsAccordion">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#affirmationsAccordion">
                 <div class="accordion-body">
                   <ul class="affirmation-list mb-0">
                     <li>"I am worthy of love and respect"</li>
@@ -452,7 +471,7 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#198754; background: #e0ffe7;">
+                <button class="accordion-button collapsed fw-bold affirmations-accordion-btn-anxiety" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <i class="bi bi-heart-pulse-fill me-2"></i>For Anxiety
                 </button>
               </h2>
@@ -470,7 +489,7 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#b8860b; background: #fffbe7;">
+                <button class="accordion-button collapsed fw-bold affirmations-accordion-btn-darkdays" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <i class="bi bi-rainbow me-2"></i>For Dark Days
                 </button>
               </h2>
@@ -488,7 +507,7 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:#4b3ca7; background: #e9d5ff;">
+                <button class="accordion-button collapsed fw-bold affirmations-accordion-btn-selfworth" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   <i class="bi bi-gem me-2"></i>For Self-Worth
                 </button>
               </h2>
@@ -506,7 +525,7 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:#035e5b; background: #f3e8ff;">
+                <button class="accordion-button collapsed fw-bold affirmations-accordion-btn-strength" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   <i class="bi bi-shield-fill-check me-2"></i>For Inner Strength
                 </button>
               </h2>
@@ -527,9 +546,10 @@
       </section>
       </main>
     </div>
-    <!-- End of main-content -->
+    
 
-    <!-- Bootstrap JS Script-->
+    
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -538,24 +558,25 @@
 
 
 
-    <!---Footer-->
-    <footer class="footer" style="background: #fff; color: #035e5b; padding: 2.2rem 0 1.2rem 0; text-align: center; font-size: 1.08rem; border-top: 2.5px solid #e0e7ff; box-shadow: 0 -2px 24px 0 rgba(3,94,91,0.04); position: relative;">
+    
+    <!-- Footer -->
+    <footer class="footer">
       <div class="container">
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.7rem;">
-          <div style="font-size: 1.5rem; font-weight: 700; color: #035e5b; letter-spacing: 0.01em; display: flex; align-items: center; gap: 0.5rem;">
-            <i class="fa-solid fa-brain" style="color: #035e5b; font-size: 1.7rem;"></i>
+        <div class="footer-flex">
+          <div class="footer-brand">
+            <i class="fa-solid fa-brain footer-brand-icon"></i>
             Mind Aware
           </div>
-          <p style="margin-bottom: 0.2rem; color: #035e5b; font-weight: 600; letter-spacing: 0.01em; font-size: 1.08rem;">&copy; 2025 Mental Health with Mind Aware. All rights reserved.</p>
-          <p style="color: #035e5b; margin-bottom: 0.2rem; font-size: 1.03rem;">
+          <p class="footer-copyright">&copy; 2025 Mental Health with Mind Aware. All rights reserved.</p>
+          <p class="footer-urgent">
             For urgent help, call Samaritans:
-            <i class="fa-solid fa-phone" style="color: #035e5b;"></i>
-            <a href="tel:116123" style="color: #035e5b; text-decoration: underline; font-weight: 600;">116 123</a>
-            <span style="color: #888;">(UK, 24/7)</span>
+            <i class="fa-solid fa-phone footer-phone-icon"></i>
+            <a href="tel:116123" class="footer-urgent-link">116 123</a>
+            <span class="footer-urgent-note">(UK, 24/7)</span>
           </p>
         </div>
-        <div style="margin-top: 1.2rem;">
-          <span style="color: #035e5b; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.01em; opacity: 0.85;">Be kind to your mind. You matter.</span>
+        <div class="footer-kindness">
+          <span>Be kind to your mind. You matter.</span>
         </div>
       </div>
     </footer>
