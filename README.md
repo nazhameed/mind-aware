@@ -80,6 +80,8 @@ Version control was managed with Git and GitHub. All commits reflect development
 
 - **Responsiveness**:  
   The site layout adapts across screen sizes using Bootstrap’s grid system and media queries. Tested on mobile, tablet, and desktop devices.
+  <img width="1424" height="826" alt="image" src="https://github.com/user-attachments/assets/293ab94d-88ff-494b-972a-c9fa27f8bfcb" />
+
 
 - **Accessibility**:  
   - Semantic HTML used throughout (e.g., `<section>`, `<nav>`, `<footer>`).  
