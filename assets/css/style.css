@@ -215,6 +215,12 @@
   object-fit: cover;
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
+  display: block;
+}
+@media (max-width: 575.98px) {
+  .tip-card-img {
+    height: 90px;
+  }
 }
 
 .brand-custom {
@@ -412,6 +418,11 @@ p {
 .card-body {
   padding: 2rem;
 }
+@media (max-width: 575.98px) {
+  .card-body {
+    padding: 1.1rem 0.8rem 1rem 0.8rem;
+  }
+}
 .card-title {
   font-size: 1.3rem;
   font-weight: 700;
@@ -539,4 +550,13 @@ h1, h2, h3, h4, h5, h6, .section-title {
 #common-issues {
   background: linear-gradient(135deg, #f8fdff 0%, #f0f8f0 50%, #faf0fa 100%);
   padding: 4rem 0;
+}
+@media (max-width: 575.98px) {
+  .tips-section,
+  .affirmations-section,
+  .info-section,
+  .resources-list,
+  #common-issues {
+    padding: 2.2rem 0;
+  }
 }
