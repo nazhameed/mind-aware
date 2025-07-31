@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    
     <script
       src="https://kit.fontawesome.com/ddb0718bd5.js"
       crossorigin="anonymous"
@@ -31,8 +32,8 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <i class="fa-solid fa-brain"></i> Mind Aware
+          <a class="navbar-brand" href="#" style="color: #035e5b; font-weight: 700; letter-spacing: 0.01em; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-brain" style="color: #035e5b; font-size: 1.7rem;"></i> Mind Aware
           </a>
           <button
             class="navbar-toggler"
@@ -52,13 +53,13 @@
                 <a class="nav-link" href="#common-issues">Common Issues</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="tips.html">Tips</a>
+                <a class="nav-link" href="#tips">Tips</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="resources.html">Resources</a>
+                <a class="nav-link" href="#resources">Resources</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="affirmations.html">Affirmations</a>
+                <a class="nav-link" href="#affirmations">Affirmations</a>
               </li>
             </ul>
           </div>
@@ -80,7 +81,7 @@
                 support, resources, and tools to help you on your journey to
                 mental well-being.
               </p>
-              <a href="resources.html" class="btn btn-secondary btn-lg">
+              <a href="#crisis-support-title" class="btn btn-secondary btn-lg">
                 Get Support Now
               </a>
             </div>
@@ -91,142 +92,303 @@
       <!-- Common Mental Health Issues Section -->
       <section id="common-issues" class="py-5 bg-white">
         <div class="container">
-          <h2 class="section-title text-center mb-4">
-            <i class="bi bi-heart-pulse text-danger"></i> Common Mental Health Issues
+          <h2 class="section-title text-center mb-4" style="color: #035e5b; font-size: 2.2rem; font-weight: 800; letter-spacing: 0.01em; text-shadow: 0 2px 16px #e0e7ff;">
+            <span aria-hidden="true" style="font-size: 2.3rem; vertical-align: middle;">💬</span> Common Mental Health Issues
           </h2>
-          <p class="section-description text-center mb-5">
+          <p class="section-description text-center mb-5" style="color: #035e5b; font-size: 1.15rem; max-width: 650px; margin: 0 auto 2.2rem auto; letter-spacing: 0.01em;">
             Learn about the most common mental health challenges, their signs, and gentle ways to cope.
           </p>
           <div class="row g-4 justify-content-center">
-            <!-- Anxiety Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-lg border-0 card-teal rounded-4">
-                <div class="card-body text-center d-flex flex-column p-4">
-                  <div class="mb-2">
-                    <i class="bi bi-emoji-frown-fill display-5 text-primary mb-2" title="Anxiety"></i>
-                  </div>
-                  <h3 class="card-title mb-2">Anxiety</h3>
-                  <p class="card-text small flex-grow-1">Persistent feelings of nervousness, worry, or fear that can affect daily life. Anxiety can manifest physically and emotionally, and may include panic attacks or social anxiety.</p>
-                  <button class="btn btn-outline-primary btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#anxietyMore" aria-expanded="false" aria-controls="anxietyMore">
-                    <i class="bi bi-search-heart"></i> Learn More
-                  </button>
-                  <div class="collapse mt-3" id="anxietyMore">
-                    <ul class="text-start small mb-2">
-                      <li><strong>Symptoms:</strong> Excessive worry, restlessness, rapid heartbeat.</li>
-                      <li><strong>Tips:</strong> Practice deep breathing, talk to someone you trust.</li>
-                    </ul>
-                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If anxiety disrupts your daily life.</p>
-                  </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #ede9fe 70%, #f8fafd 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                    😰 Anxiety
+                  </h4>
+                  <p style="color:#111; font-weight:600;">Persistent feelings of nervousness, worry, or fear that can affect daily life.</p>
+                  <ul style="color:#111;">
+                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Excessive worry, restlessness, rapid heartbeat, sweating, trouble concentrating.</span></li>
+                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Practice deep breathing, talk to someone you trust, try grounding techniques, limit caffeine.</span></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- Depression Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-lg border-0 card-green rounded-4">
-                <div class="card-body text-center d-flex flex-column p-4">
-                  <div class="mb-2">
-                    <i class="bi bi-cloud-rain-fill display-5 text-success mb-2" title="Depression"></i>
-                  </div>
-                  <h3 class="card-title mb-2">Depression</h3>
-                  <p class="card-text small flex-grow-1">A prolonged state of sadness, hopelessness, or emptiness. Depression can cause changes in sleep, appetite, motivation, and self-esteem, and may make daily tasks feel overwhelming.</p>
-                  <button class="btn btn-outline-success btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#depressionMore" aria-expanded="false" aria-controls="depressionMore">
-                    <i class="bi bi-search-heart"></i> Learn More
-                  </button>
-                  <div class="collapse mt-3" id="depressionMore">
-                    <ul class="text-start small mb-2">
-                      <li><strong>Symptoms:</strong> Persistent sadness, loss of interest, fatigue.</li>
-                      <li><strong>Tips:</strong> Stay connected, set small goals, seek sunlight.</li>
-                    </ul>
-                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If symptoms last more than two weeks or are severe.</p>
-                  </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #e9d5ff 70%, #f8fafd 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                    🌧️ Depression
+                  </h4>
+                  <p style="color:#111; font-weight:600;">A prolonged state of sadness, hopelessness, or emptiness. Can affect motivation, sleep, appetite, and relationships.</p>
+                  <ul style="color:#111;">
+                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Persistent sadness, loss of interest, fatigue, changes in sleep or appetite, feelings of worthlessness.</span></li>
+                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Stay connected, set small goals, seek sunlight, consider professional help.</span></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- Stress Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-lg border-0 card-lavender rounded-4">
-                <div class="card-body text-center d-flex flex-column p-4">
-                  <div class="mb-2">
-                    <i class="bi bi-lightning-fill display-5 text-info mb-2" title="Stress"></i>
-                  </div>
-                  <h3 class="card-title mb-2">Stress</h3>
-                  <p class="card-text small flex-grow-1">Emotional and physical strain caused by challenging or demanding situations. Stress can be acute or chronic, and may impact your mood, body, and ability to cope with daily life.</p>
-                  <button class="btn btn-outline-info btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#stressMore" aria-expanded="false" aria-controls="stressMore">
-                    <i class="bi bi-search-heart"></i> Learn More
-                  </button>
-                  <div class="collapse mt-3" id="stressMore">
-                    <ul class="text-start small mb-2">
-                      <li><strong>Symptoms:</strong> Feeling overwhelmed, headaches, trouble sleeping.</li>
-                      <li><strong>Tips:</strong> Take breaks, move your body, talk it out.</li>
-                    </ul>
-                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If stress feels unmanageable or constant.</p>
-                  </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #f3e8ff 70%, #f8fafd 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                    💥 Stress
+                  </h4>
+                  <p style="color:#111; font-weight:600;">Emotional and physical strain caused by challenging or demanding situations.</p>
+                  <ul style="color:#111;">
+                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Feeling overwhelmed, headaches, trouble sleeping, irritability, muscle tension.</span></li>
+                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Take breaks, move your body, talk it out, try relaxation techniques, set boundaries.</span></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- PTSD Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-lg border-0 card-green rounded-4">
-                <div class="card-body text-center d-flex flex-column p-4">
-                  <div class="mb-2">
-                    <i class="bi bi-exclamation-triangle-fill display-5 text-success mb-2" title="PTSD"></i>
-                  </div>
-                  <h3 class="card-title mb-2">PTSD</h3>
-                  <p class="card-text small flex-grow-1">A mental health condition triggered by experiencing or witnessing trauma. PTSD can cause flashbacks, nightmares, and intense emotional distress, often long after the traumatic event.</p>
-                  <button class="btn btn-outline-success btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#ptsdMore" aria-expanded="false" aria-controls="ptsdMore">
-                    <i class="bi bi-search-heart"></i> Learn More
-                  </button>
-                  <div class="collapse mt-3" id="ptsdMore">
-                    <ul class="text-start small mb-2">
-                      <li><strong>Symptoms:</strong> Flashbacks, avoidance, feeling on edge.</li>
-                      <li><strong>Tips:</strong> Practice grounding, seek safe spaces, talk to a professional.</li>
-                    </ul>
-                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If symptoms persist or disrupt daily life.</p>
-                  </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #ede9fe 70%, #e9d5ff 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                    🧩 PTSD
+                  </h4>
+                  <p style="color:#111; font-weight:600;">A mental health condition triggered by experiencing or witnessing trauma.</p>
+                  <ul style="color:#111;">
+                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Flashbacks, avoidance, feeling on edge, nightmares, emotional numbness.</span></li>
+                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Practice grounding, seek safe spaces, talk to a professional, try mindfulness.</span></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- OCD Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-lg border-0 card-lavender rounded-4">
-                <div class="card-body text-center d-flex flex-column p-4">
-                  <div class="mb-2">
-                    <i class="bi bi-arrow-repeat display-5 text-info mb-2" title="OCD repetitive thoughts and behaviors"></i>
-                  </div>
-                  <h3 class="card-title mb-2">OCD</h3>
-                  <p class="card-text small flex-grow-1">Characterized by unwanted, intrusive thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) performed to reduce anxiety. OCD can be time-consuming and distressing.</p>
-                  <button class="btn btn-outline-info btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#ocdMore" aria-expanded="false" aria-controls="ocdMore">
-                    <i class="bi bi-search-heart"></i> Learn More
-                  </button>
-                  <div class="collapse mt-3" id="ocdMore">
-                    <ul class="text-start small mb-2">
-                      <li><strong>Symptoms:</strong> Obsessions, compulsions, distress when unable to perform rituals.</li>
-                      <li><strong>Tips:</strong> Practice self-compassion, try gentle exposure, seek support.</li>
-                    </ul>
-                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If OCD interferes with daily life or causes distress.</p>
-                  </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #f3e8ff 70%, #ede9fe 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                    🔁 OCD
+                  </h4>
+                  <p style="color:#111; font-weight:600;">Unwanted, intrusive thoughts and repetitive behaviors performed to reduce anxiety.</p>
+                  <ul style="color:#111;">
+                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Obsessions, compulsions, distress when unable to perform rituals, time-consuming behaviors.</span></li>
+                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Practice self-compassion, try gentle exposure, seek support, avoid self-judgment.</span></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- Bipolar Disorder Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-lg border-0 card-teal rounded-4">
-                <div class="card-body text-center d-flex flex-column p-4">
-                  <div class="mb-2">
-                    <i class="bi bi-arrow-left-right display-5 text-primary mb-2" title="Bipolar mood swings"></i>
-                  </div>
-                  <h3 class="card-title mb-2">Bipolar Disorder</h3>
-                  <p class="card-text small flex-grow-1">A condition marked by extreme mood swings, including emotional highs (mania or hypomania) and lows (depression). Bipolar disorder can affect energy, judgment, and relationships.</p>
-                  <button class="btn btn-outline-primary btn-lg rounded mt-2 d-inline-flex align-items-center gap-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#bipolarMore" aria-expanded="false" aria-controls="bipolarMore">
-                    <i class="bi bi-search-heart"></i> Learn More
-                  </button>
-                  <div class="collapse mt-3" id="bipolarMore">
-                    <ul class="text-start small mb-2">
-                      <li><strong>Symptoms:</strong> Mood swings, high energy, sadness, impulsivity.</li>
-                      <li><strong>Tips:</strong> Keep a routine, track moods, reach out for help.</li>
-                    </ul>
-                    <p class="small text-muted mb-0"><strong>When to seek help:</strong> If mood changes are severe or impact daily life.</p>
-                  </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #e9d5ff 70%, #f3e8ff 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                    🔄 Bipolar Disorder
+                  </h4>
+                  <p style="color:#111; font-weight:600;">A condition marked by extreme mood swings, including emotional highs and lows.</p>
+                  <ul style="color:#111;">
+                    <li><strong style="color:#198754;">Symptoms:</strong> <span style="color:#198754;">Mood swings, high energy, impulsivity, sadness, changes in sleep, risky behavior.</span></li>
+                    <li><strong style="color:#198754;">Tips:</strong> <span style="color:#198754;">Keep a routine, track moods, reach out for help, avoid substance use, seek professional support.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="text-align: center; color: #198754; font-size: 1.05rem; margin-top: 1.7rem; letter-spacing: 0.01em;">If you relate to any of these, know that support is available and you are not alone.</p>
+        </div>
+      </section>
+
+       <!-- Emergency Resources -->
+          <section class="crisis-support-simple" aria-labelledby="crisis-support-title" style="background: #fff3f3; border-radius: 1.2rem; padding: 2rem 1rem; margin-bottom: 2.5rem; box-shadow: 0 2px 12px rgba(220,53,69,0.08);">
+            <h2 id="crisis-support-title" style="color: #b8002e; font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem;">
+              <span aria-hidden="true" style="font-size: 2.2rem; vertical-align: middle;">🚨</span> Emergency & Crisis Support
+            </h2>
+            <p style="text-align: center; color: #333; font-size: 1.1rem; max-width: 600px; margin: 0 auto 1.5rem auto;">
+              If you or someone you know is in immediate danger or having thoughts of self-harm, <strong>get help now</strong>.
+            </p>
+            <div class="crisis-cards d-flex flex-wrap justify-content-center align-items-stretch gap-4" style="margin-left: auto; margin-right: auto;">
+              <div class="crisis-card d-flex flex-column align-items-center justify-content-between" style="background: #fff; border: 2px solid #b8002e; border-radius: 1rem; padding: 1.2rem 1.5rem; min-width: 220px; max-width: 320px; width: 100%; box-shadow: 0 1px 6px rgba(220,53,69,0.07);">
+                <h3 style="color: #b8002e; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.5rem;">999</h3>
+                <p style="color: #333; font-size: 1rem; text-align: center;">Emergency services for immediate life-threatening situations.</p>
+                <a href="tel:999" class="btn btn-danger mt-auto w-100" style="font-size: 1rem;">Call 999</a>
+              </div>
+              <div class="crisis-card d-flex flex-column align-items-center justify-content-between" style="background: #fff; border: 2px solid #b8002e; border-radius: 1rem; padding: 1.2rem 1.5rem; min-width: 220px; max-width: 320px; width: 100%; box-shadow: 0 1px 6px rgba(220,53,69,0.07);">
+                <h3 style="color: #b8002e; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.5rem;">Samaritans</h3>
+                <p style="color: #333; font-size: 1rem; text-align: center;">24/7 confidential support for anyone in emotional distress.</p>
+                <a href="tel:116123" class="btn btn-outline-danger mt-auto w-100" style="font-size: 1rem;">Call 116 123</a>
+              </div>
+              <div class="crisis-card d-flex flex-column align-items-center justify-content-between" style="background: #fff; border: 2px solid #b8002e; border-radius: 1rem; padding: 1.2rem 1.5rem; min-width: 220px; max-width: 320px; width: 100%; box-shadow: 0 1px 6px rgba(220,53,69,0.07);">
+                <h3 style="color: #b8002e; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.5rem;">Text SHOUT to 85258</h3>
+                <p style="color: #333; font-size: 1rem; text-align: center;">Crisis text line for 24/7 support via text message.</p>
+                <a href="https://www.giveusashout.org/" target="_blank" rel="noopener" class="btn btn-outline-danger mt-auto w-100" style="font-size: 1rem;">Text Now</a>
+              </div>
+            </div>
+            <p style="text-align: center; color: #555; font-size: 0.98rem; margin-top: 1.5rem;">All services are free and confidential. You are not alone.</p>
+          </section>
+
+
+      <!-- Additional Sections -->
+      <section id="tips" class="tips-section py-5">
+        <div class="container">
+          <h2 class="section-title text-center mb-4">Mental Health Tips</h2>
+          <p class="text-center mb-5">Simple, practical habits to support your mental wellbeing and help you thrive in daily life.</p>
+
+          <div class="row g-4">
+            <!-- Tip 1 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-teal h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-heart-fill me-2"></i>Practice Self-Care
+                  </h3>
+                  <p class="card-text">Set aside time each day for activities that make you feel good. This could be a warm bath, reading, or listening to music.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 2 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-green h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-people-fill me-2"></i>Stay Connected
+                  </h3>
+                  <p class="card-text">Maintain relationships with family and friends. Even a quick text or call can make a big difference to your mood.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 3 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-lavender h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-moon-fill me-2"></i>Get Enough Sleep
+                  </h3>
+                  <p class="card-text">Aim for 7-9 hours of sleep each night. Create a bedtime routine and avoid screens before bed for better rest.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 4 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-green h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-tree-fill me-2"></i>Spend Time in Nature
+                  </h3>
+                  <p class="card-text">Take walks in parks, gardens, or natural spaces. Fresh air and greenery can boost your mood and reduce stress.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 5 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-lavender h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-journal-text me-2"></i>Keep a Journal
+                  </h3>
+                  <p class="card-text">Write down your thoughts and feelings. Journaling helps process emotions and track patterns in your mental health.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 6 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-teal h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-activity me-2"></i>Stay Active
+                  </h3>
+                  <p class="card-text">Regular exercise, even just a 10-minute walk, releases endorphins that naturally improve your mood.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 7 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-green h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-cup-hot-fill me-2"></i>Practice Mindfulness
+                  </h3>
+                  <p class="card-text">Try meditation, deep breathing, or simply focusing on the present moment. Apps like Headspace can help you get started.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 8 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-lavender h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-chat-heart-fill me-2"></i>Talk About It
+                  </h3>
+                  <p class="card-text">Don't keep feelings bottled up. Talk to trusted friends, family, or a counselor about what you're experiencing.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Tip 9 -->
+            <div class="col-md-6 col-lg-4">
+              <article class="card card-teal h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <i class="bi bi-calendar-check me-2"></i>Set Small Goals
+                  </h3>
+                  <p class="card-text">Break big tasks into smaller, manageable steps. Celebrating small wins builds confidence and momentum.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="resources-list py-5">
+        <div class="container">
+          <h2 class="section-title">UK Mental Health & Neurodivergent Resources</h2>
+          <p class="text-center mb-5">Explore trusted organisations and services supporting mental health and neurodivergent communities.</p>
+
+         
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+            </div>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #f8fafd 70%, #e0e7ff 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#4b3ca7; font-weight:700;">
+                    <i class="bi bi-heart-fill me-2 text-primary"></i>General Mental Health Support
+                  </h4>
+                  <ul class="resource-links mb-0" style="font-size:1.07rem;">
+                    <li><a href="https://www.mind.org.uk" target="_blank">Mind</a> – Advice and support for anyone experiencing mental health issues.</li>
+                    <li><a href="https://www.youngminds.org.uk" target="_blank">YoungMinds</a> – Support and resources for young people's mental health.</li>
+                    <li><a href="https://www.nhs.uk/mental-health/" target="_blank">NHS Mental Health Services</a> – Official NHS support for mental health care.</li>
+                    <li><a href="https://www.rethink.org" target="_blank">Rethink Mental Illness</a> – Support for people affected by mental illness.</li>
+                    <li><a href="https://www.mentalhealth.org.uk" target="_blank">Mental Health Foundation</a> – Resources for improving mental health and wellbeing.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #e0ffe7 70%, #e0e7ff 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#198754; font-weight:700;">
+                    <i class="bi bi-puzzle-fill me-2 text-success"></i>Neurodivergent Support
+                  </h4>
+                  <ul class="resource-links mb-0" style="font-size:1.07rem;">
+                    <li><a href="https://www.autism.org.uk" target="_blank">National Autistic Society</a> – Leading UK charity for autistic people and their families.</li>
+                    <li><a href="https://www.adhdfoundation.org.uk" target="_blank">ADHD Foundation</a> – Neurodiversity charity supporting ADHD and related conditions.</li>
+                    <li><a href="https://www.adhduk.co.uk" target="_blank">ADHD UK</a> – Support and information for people with ADHD.</li>
+                    <li><a href="https://www.dyslexiaaction.org.uk" target="_blank">Dyslexia Action</a> – Support for people with dyslexia and learning differences.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-lg border-0" style="background: linear-gradient(120deg, #fffbe7 70%, #e0e7ff 100%); border-radius: 1.2rem;">
+                <div class="card-body">
+                  <h4 class="card-title text-center mb-3" style="color:#b8860b; font-weight:700;">
+                    <i class="fa-solid fa-user-doctor me-2 text-warning"></i>Specialist Support
+                  </h4>
+                  <ul class="resource-links mb-0" style="font-size:1.07rem;">
+                    <li><a href="https://www.baat.org" target="_blank">British Association of Art Therapists</a> – Resources on therapeutic art for mental health.</li>
+                    <li><a href="https://www.bacp.co.uk" target="_blank">BACP (British Association for Counselling & Psychotherapy)</a> – Find qualified therapists and counsellors.</li>
+                    <li><a href="https://www.relate.org.uk" target="_blank">Relate</a> – Relationship counselling and support services.</li>
+                    <li><a href="https://www.cruse.org.uk" target="_blank">Cruse Bereavement Care</a> – Support for people experiencing grief and bereavement.</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -234,44 +396,133 @@
         </div>
       </section>
 
-      <!-- Additional Sections -->
-      <section id="tips" class="info-section text-center py-5 bg-light">
+      <section id="affirmations" class="affirmations-section py-5 bg-light">
         <div class="container">
-          <h2>
-            <i class="bi bi-lightbulb-fill text-primary"></i> Mental Health Tips
-          </h2>
-          <p>
-            Explore simple, practical habits to support your mental wellbeing —
-            like staying connected, practicing mindfulness, and managing stress
-            gently.
-          </p>
-          <a href="tips.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </section>
-
-      <section id="resources" class="info-section text-center py-5">
-        <div class="container">
-          <h2>
-            <i class="bi bi-journal-medical text-success"></i> Helpful Resources
-          </h2>
-          <p>
-            Find trusted websites, helplines, and organizations where you can
-            learn more or reach out for support. You're never alone in this.
-          </p>
-          <a href="resources.html" class="btn btn-success">Learn More</a>
-        </div>
-      </section>
-
-      <section id="affirmations" class="info-section text-center py-5 bg-light">
-        <div class="container">
-          <h2>
-            <i class="bi bi-stars text-warning"></i> Positive Affirmations
-          </h2>
-          <p>
-            Some days are hard — this space offers encouraging words to remind
-            you of your strength, hope, and ability to grow.
-          </p>
-          <a href="affirmations.html" class="btn btn-warning">Learn More</a>
+          <h2 class="section-title text-center mb-4">Positive Affirmations</h2>
+          <p class="text-center mb-4">Encouraging words to remind you of your strength, hope, and ability to grow through difficult times.</p>
+          <div class="row justify-content-center mb-4">
+            <div class="col-lg-10 col-xl-8">
+              <div class="card shadow-sm border-0 mb-4" style="border-radius: 1.1rem;">
+                <div class="card-body">
+                  <h4 class="mb-3" style="color: #035e5b; font-weight: 700;"><i class="bi bi-lightbulb-fill me-2"></i>How to Use Affirmations</h4>
+                  <div class="row text-center">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <i class="bi bi-clock-fill display-6 text-primary mb-2"></i>
+                      <h6 class="fw-bold">Start Your Day</h6>
+                      <p class="mb-0">Read affirmations each morning to set a positive tone for your day.</p>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                      <i class="bi bi-arrow-repeat display-6 text-success mb-2"></i>
+                      <h6 class="fw-bold">Repeat Often</h6>
+                      <p class="mb-0">Say them out loud or silently throughout the day, especially during tough moments.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <i class="bi bi-journal-text display-6 text-warning mb-2"></i>
+                      <h6 class="fw-bold">Write Them Down</h6>
+                      <p class="mb-0">Keep a list in your phone or journal for easy access when you need encouragement.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="affirmationsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:#035e5b; background: #e0f7fa;">
+                  <i class="bi bi-sun-fill me-2"></i>Daily Reminders
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#affirmationsAccordion">
+                <div class="accordion-body">
+                  <ul class="affirmation-list mb-0">
+                    <li>"I am worthy of love and respect"</li>
+                    <li>"I can handle whatever comes my way"</li>
+                    <li>"My feelings are valid and important"</li>
+                    <li>"I am doing the best I can right now"</li>
+                    <li>"It's okay to take things one day at a time"</li>
+                    <li>"I deserve peace and happiness"</li>
+                    <li>"I am stronger than my challenges"</li>
+                    <li>"I choose to be kind to myself"</li>
+                    <li>"I am growing and learning every day"</li>
+                    <li>"I have the power to create positive change"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:#198754; background: #e0ffe7;">
+                  <i class="bi bi-heart-pulse-fill me-2"></i>For Anxiety
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#affirmationsAccordion">
+                <div class="accordion-body">
+                  <ul class="affirmation-list mb-0">
+                    <li>"I am safe in this moment"</li>
+                    <li>"This feeling will pass"</li>
+                    <li>"I breathe in calm, I breathe out tension"</li>
+                    <li>"I trust in my ability to cope"</li>
+                    <li>"I am in control of my thoughts"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:#b8860b; background: #fffbe7;">
+                  <i class="bi bi-rainbow me-2"></i>For Dark Days
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#affirmationsAccordion">
+                <div class="accordion-body">
+                  <ul class="affirmation-list mb-0">
+                    <li>"I matter and my life has meaning"</li>
+                    <li>"Tomorrow is a new opportunity"</li>
+                    <li>"I am not my thoughts or feelings"</li>
+                    <li>"I have survived difficult times before"</li>
+                    <li>"I choose hope, even when it's hard"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:#4b3ca7; background: #e9d5ff;">
+                  <i class="bi bi-gem me-2"></i>For Self-Worth
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#affirmationsAccordion">
+                <div class="accordion-body">
+                  <ul class="affirmation-list mb-0">
+                    <li>"I am enough, just as I am"</li>
+                    <li>"I celebrate my unique qualities"</li>
+                    <li>"I forgive myself for past mistakes"</li>
+                    <li>"I am worthy of good things"</li>
+                    <li>"I speak to myself with kindness"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color:#035e5b; background: #f3e8ff;">
+                  <i class="bi bi-shield-fill-check me-2"></i>For Inner Strength
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#affirmationsAccordion">
+                <div class="accordion-body">
+                  <ul class="affirmation-list mb-0">
+                    <li>"I am resilient and adaptable"</li>
+                    <li>"Each challenge makes me stronger"</li>
+                    <li>"I trust my inner wisdom"</li>
+                    <li>"I have overcome obstacles before"</li>
+                    <li>"I am capable of amazing things"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       </main>
@@ -288,9 +539,25 @@
 
 
     <!---Footer-->
-    <footer class="footer">
-      <p>&copy; 2025 Mental Health with Mind Aware. All rights reserved.</p>
-      <p>For urgent help, call Samaritans: <i class="fa-solid fa-phone"></i> <a href="tel:116123">116 123</a> (UK, 24/7)</p>
+    <footer class="footer" style="background: #fff; color: #035e5b; padding: 2.2rem 0 1.2rem 0; text-align: center; font-size: 1.08rem; border-top: 2.5px solid #e0e7ff; box-shadow: 0 -2px 24px 0 rgba(3,94,91,0.04); position: relative;">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.7rem;">
+          <div style="font-size: 1.5rem; font-weight: 700; color: #035e5b; letter-spacing: 0.01em; display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fa-solid fa-brain" style="color: #035e5b; font-size: 1.7rem;"></i>
+            Mind Aware
+          </div>
+          <p style="margin-bottom: 0.2rem; color: #035e5b; font-weight: 600; letter-spacing: 0.01em; font-size: 1.08rem;">&copy; 2025 Mental Health with Mind Aware. All rights reserved.</p>
+          <p style="color: #035e5b; margin-bottom: 0.2rem; font-size: 1.03rem;">
+            For urgent help, call Samaritans:
+            <i class="fa-solid fa-phone" style="color: #035e5b;"></i>
+            <a href="tel:116123" style="color: #035e5b; text-decoration: underline; font-weight: 600;">116 123</a>
+            <span style="color: #888;">(UK, 24/7)</span>
+          </p>
+        </div>
+        <div style="margin-top: 1.2rem;">
+          <span style="color: #035e5b; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.01em; opacity: 0.85;">Be kind to your mind. You matter.</span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
