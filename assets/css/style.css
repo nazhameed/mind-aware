@@ -543,20 +543,32 @@ h1, h2, h3, h4, h5, h6, .section-title {
 }
 
 /* Section backgrounds between hero and footer */
-.tips-section,
-.affirmations-section,
-.info-section,
-.resources-list,
-#common-issues {
-  background: linear-gradient(135deg, #f8fdff 0%, #f0f8f0 50%, #faf0fa 100%);
-  padding: 4rem 0;
-}
+  .tips-section,
+  .affirmations-section,
+  .info-section,
+  .resources-section,
+  #common-issues {
+    background: linear-gradient(135deg, #f8fdff 0%, #f0f8f0 50%, #faf0fa 100%);
+    padding: 4rem 0;
+  }
 @media (max-width: 575.98px) {
   .tips-section,
   .affirmations-section,
   .info-section,
-  .resources-list,
+  .resources-section,
   #common-issues {
     padding: 2.2rem 0;
   }
+}
+
+/* Accordion resource and affirmation lists: remove bullets and center text */
+.resources-section .accordion-body ul.resource-links,
+.affirmations-section .accordion-body ul.affirmation-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  text-align: center;
+}
+.resources-section .accordion-body ul.resource-links li,
+.affirmations-section .accordion-body ul.affirmation-list li {
+  margin-bottom: 0.7rem;
 }

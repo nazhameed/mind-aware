@@ -231,7 +231,7 @@
           <p class="text-center mb-5">Simple, practical habits to support your mental wellbeing and help you thrive in daily life.</p>
 
           <div class="row g-4">
-            
+            <!-- Mental Health Tips Cards: Each card is unique, no duplicates -->
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-teal h-100 shadow-sm">
                 <img src="assets/images/self-care.jpg" alt="Self-care: relaxing with a book and tea" class="tip-card-img" />
@@ -243,8 +243,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-green h-100 shadow-sm">
                 <img src="assets/images/connected.jpg" alt="Stay Connected: friends talking and smiling together" class="tip-card-img" />
@@ -256,8 +254,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-lavender h-100 shadow-sm">
                 <img src="assets/images/sleep.jpg" alt="Sleep: peaceful night with stars and moon" class="tip-card-img" />
@@ -269,8 +265,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-green h-100 shadow-sm">
                 <img src="assets/images/nature.jpg" alt="Spend Time in Nature: walking in a green park" class="tip-card-img" />
@@ -282,8 +276,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-lavender h-100 shadow-sm">
                 <img src="assets/images/journal.jpg" alt="Keep a Journal: writing thoughts in a notebook" class="tip-card-img" />
@@ -295,8 +287,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-teal h-100 shadow-sm">
                 <img src="assets/images/stay-active.jpg" alt="Stay Active: person jogging outdoors" class="tip-card-img" />
@@ -308,8 +298,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-green h-100 shadow-sm">
                 <img src="assets/images/mindful.jpg" alt="Practice Mindfulness: meditating in a calm space" class="tip-card-img" />
@@ -321,8 +309,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-lavender h-100 shadow-sm">
                 <img src="assets/images/talk.jpg" alt="Talk About It: two people having a supportive conversation" class="tip-card-img" />
@@ -334,8 +320,6 @@
                 </div>
               </article>
             </div>
-
-            
             <div class="col-12 col-sm-6 col-lg-4">
               <article class="card card-teal h-100 shadow-sm">
                 <img src="assets/images/goals.jpg" alt="Set Small Goals: checklist and calendar planning" class="tip-card-img" />
@@ -352,20 +336,19 @@
       </section>
 
       <!-- Resources Section -->
-      <section id="resources" class="resources-list py-5">
+      <section id="resources" class="resources-section py-5">
         <div class="container">
-          <h2 class="section-title">UK Mental Health & Neurodivergent Resources</h2>
-          <p class="text-center mb-5">Explore trusted organisations and services supporting mental health and neurodivergent communities.</p>
-
-         
-         
-          <div class="row g-4 justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card h-100 shadow-lg border-0 resource-card-general">
-                <div class="card-body">
-                <h4 class="card-title text-center mb-3 resource-card-title-general">
-                    <i class="bi bi-heart-fill me-2 text-primary"></i>General Mental Health Support
-                  </h4>
+          <h2 class="section-title text-center mb-4">UK Mental Health & Neurodivergent Resources</h2>
+          <p class="text-center mb-4">Explore trusted organisations and services supporting mental health and neurodivergent communities.</p>
+          <div class="accordion" id="resourcesAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="resourcesGeneralHeading">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#resourcesGeneral" aria-expanded="true" aria-controls="resourcesGeneral">
+                  <i class="bi bi-heart-fill me-2 text-primary"></i>General Mental Health Support
+                </button>
+              </h2>
+              <div id="resourcesGeneral" class="accordion-collapse collapse show" aria-labelledby="resourcesGeneralHeading" data-bs-parent="#resourcesAccordion">
+                <div class="accordion-body">
                   <ul class="resource-links mb-0 resource-card-list">
                     <li><a href="https://www.mind.org.uk" target="_blank">Mind</a> – Advice and support for anyone experiencing mental health issues.</li>
                     <li><a href="https://www.youngminds.org.uk" target="_blank">YoungMinds</a> – Support and resources for young people's mental health.</li>
@@ -376,12 +359,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card h-100 shadow-lg border-0 resource-card-nd">
-                <div class="card-body">
-                <h4 class="card-title text-center mb-3 resource-card-title-nd">
-                    <i class="bi bi-puzzle-fill me-2 text-success"></i>Neurodivergent Support
-                  </h4>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="resourcesNDHeading">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#resourcesND" aria-expanded="false" aria-controls="resourcesND">
+                  <i class="bi bi-puzzle-fill me-2 text-success"></i>Neurodivergent Support
+                </button>
+              </h2>
+              <div id="resourcesND" class="accordion-collapse collapse" aria-labelledby="resourcesNDHeading" data-bs-parent="#resourcesAccordion">
+                <div class="accordion-body">
                   <ul class="resource-links mb-0 resource-card-list">
                     <li><a href="https://www.autism.org.uk" target="_blank">National Autistic Society</a> – Leading UK charity for autistic people and their families.</li>
                     <li><a href="https://www.adhdfoundation.org.uk" target="_blank">ADHD Foundation</a> – Neurodiversity charity supporting ADHD and related conditions.</li>
@@ -391,12 +376,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="card h-100 shadow-lg border-0 resource-card-specialist">
-                <div class="card-body">
-                <h4 class="card-title text-center mb-3 resource-card-title-specialist">
-                    <i class="fa-solid fa-user-doctor me-2 text-warning"></i>Specialist Support
-                  </h4>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="resourcesSpecialistHeading">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#resourcesSpecialist" aria-expanded="false" aria-controls="resourcesSpecialist">
+                  <i class="fa-solid fa-user-doctor me-2 text-warning"></i>Specialist Support
+                </button>
+              </h2>
+              <div id="resourcesSpecialist" class="accordion-collapse collapse" aria-labelledby="resourcesSpecialistHeading" data-bs-parent="#resourcesAccordion">
+                <div class="accordion-body">
                   <ul class="resource-links mb-0 resource-card-list">
                     <li><a href="https://www.baat.org" target="_blank">British Association of Art Therapists</a> – Resources on therapeutic art for mental health.</li>
                     <li><a href="https://www.bacp.co.uk" target="_blank">BACP (British Association for Counselling & Psychotherapy)</a> – Find qualified therapists and counsellors.</li>
